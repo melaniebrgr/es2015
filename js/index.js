@@ -5,7 +5,8 @@
 // default-function-parameters
 // rest-spread
 // object-literal-extensions
+// for-of-loops
 
-var es6 = require('./object-literal-extensions');
+var es6 = require('./for-of-loops');
 
 console.log(es6);
