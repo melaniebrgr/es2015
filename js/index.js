@@ -2,7 +2,8 @@
 // let-const-blockScoping
 // arrow-functions
 // default-function-parameters
+// rest-spread
 
-var es6 = require('./default-function-parameters');
+var es6 = require('./rest-spread');
 
 console.log(es6);
