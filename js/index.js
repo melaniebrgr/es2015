@@ -7,7 +7,8 @@
 // object-literal-extensions
 // for-of-loops
 // octal-binary-literals
+// template-literals
 
-var es6 = require('./octal-binary-literals');
+var es6 = require('./template-literals');
 
 console.log(es6);
