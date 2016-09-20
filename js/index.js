@@ -18,10 +18,11 @@
 // octal-binary-literals
 // template-literals
 // destructuring
+// class
 
 // TEST:
-// var es6 = require('./destructuring');
-// console.log(es6);
+var es6 = require('./class');
+console.log(es6);
 
 
 /* README
@@ -32,5 +33,9 @@
 	4) check console
 */
 
-import es6 from './modules.js';
-console.log(es6);
+// MODULES:
+// modules
+
+// TEST:
+// import es6 from './modules.js';
+// console.log(es6);
