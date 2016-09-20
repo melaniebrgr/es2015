@@ -1,5 +1,14 @@
-// ES6 test modules:
+// ES6
 
+/* README
+	For the following modules 
+	1) turn off Babel or code will be transpiled
+	2) require modules
+	3) npm run build:js and webpack-dev-server
+	4) check console for 'es6' var
+*/
+
+// MODULES:
 // let-const-blockScoping
 // arrow-functions
 // default-function-parameters
@@ -10,6 +19,18 @@
 // template-literals
 // destructuring
 
-var es6 = require('./destructuring');
+// TEST:
+// var es6 = require('./destructuring');
+// console.log(es6);
 
+
+/* README
+	For the following modules 
+	1) turn on Babel as browser do not support es6 modules yet
+	2) import modules
+	3) npm run build:js and webpack-dev-server
+	4) check console
+*/
+
+import es6 from './modules.js';
 console.log(es6);

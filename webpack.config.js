@@ -12,16 +12,16 @@ module.exports = {
   },
   watch: true,
   devtool: 'source-map',
-  // module: {
-  //   loaders: [
-  //     {
-  //       test: /\.js$/,
-  //       exclude: /(node_modules)/,
-  //       loader: 'babel',
-  //       query: {
-  //         presets: ['es2015']
-  //       }
-  //     }
-  //   ]
-  // }
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        loader: 'babel',
+        query: {
+          presets: ['es2015']
+        }
+      }
+    ]
+  }
 }
