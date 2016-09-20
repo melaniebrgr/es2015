@@ -39,9 +39,29 @@ let pedro = new Dog();
 class Reptile {
 	constructor() {
 		this.color = 'green';
+		console.log(new.target);
 	}
 }
 let tRex = new Reptile();
+
+// 5 static members
+class Parent {
+	static getDefaultId() {
+		return 10;
+	}
+}
+let child = new Parent();
+
+// 6 new.target
+class Mammal2 {
+	constructor() {
+		console.log(new.target.getDefaultNoise());
+	}
+}
+class Dog2 extends Mammal2 {
+	static getDefaultNoise() { return "woof"; }
+}
+let pedro2 = new Dog2();
 
 module.exports = {
 	"1.1": typeof Task, //function
@@ -52,5 +72,8 @@ module.exports = {
 	"1.6": window.Task === Task, //false
 	"3.1": pedro,
 	"3.2": pedro.getLegCount(), //4
-	"4": tRex.color
+	"4": tRex.color, //green
+	"5": Parent.getDefaultId(), //10
+	// "5.2": child.getDefaultId() //error
+	// "6": pedro2.getNoise()
 }
