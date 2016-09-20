@@ -12,12 +12,14 @@ let task = new Task();
 let newClass = Task;
 new newClass();
 
+
 // 2 extends
 class Project {
 	constructor(name) { console.log(`Project constructor called when instanced with name: ${name}`); }
 }
 class SoftwareProject extends Project {}
 let project = new SoftwareProject('Mazatlan');
+
 
 // 3 extends & super
 class Mammal {
@@ -32,6 +34,15 @@ class Dog extends Mammal {
 }
 let pedro = new Dog();
 
+
+// 4 instance properties
+class Reptile {
+	constructor() {
+		this.color = 'green';
+	}
+}
+let tRex = new Reptile();
+
 module.exports = {
 	"1.1": typeof Task, //function
 	"1.2": typeof task, //object
@@ -40,5 +51,6 @@ module.exports = {
 	"1.5": task.showId === Task.prototype.showId, //true
 	"1.6": window.Task === Task, //false
 	"3.1": pedro,
-	"3.2": pedro.getLegCount() //4
+	"3.2": pedro.getLegCount(), //4
+	"4": tRex.color
 }
