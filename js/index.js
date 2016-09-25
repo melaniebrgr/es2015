@@ -21,9 +21,10 @@
 // class
 // symbols
 // object-extensions
+// string-extensions
 
 // TEST:
-var es6 = require('./object-extensions');
+var es6 = require('./string-extensions');
 console.log(es6);
 
 
