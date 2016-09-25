@@ -22,9 +22,10 @@
 // symbols
 // object-extensions
 // string-extensions
+// number extensions
 
 // TEST:
-var es6 = require('./string-extensions');
+var es6 = require('./number-extensions');
 console.log(es6);
 
 
