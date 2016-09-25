@@ -73,7 +73,6 @@ module.exports = {
 	"3.1": pedro,
 	"3.2": pedro.getLegCount(), //4
 	"4": tRex.color, //green
-	"5": Parent.getDefaultId(), //10
+	"5": Parent.getDefaultId() //10
 	// "5.2": child.getDefaultId() //error
-	// "6": pedro2.getNoise()
 }
