@@ -19,9 +19,11 @@
 // template-literals
 // destructuring
 // class
+// symbols
+// object-extensions
 
 // TEST:
-var es6 = require('./class');
+var es6 = require('./object-extensions');
 console.log(es6);
 
 
