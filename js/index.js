@@ -24,9 +24,10 @@
 // string-extensions
 // number-extensions
 // math-extensions
+// regexp-extensions
 
 // TEST:
-var es6 = require('./math-extensions');
+var es6 = require('./regexp-extensions');
 console.log(es6);
 
 
